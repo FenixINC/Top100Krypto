@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Top100 Krypto</string>
+
+    <string name="the_index_is_calculated">The rating TOP-100 cryptocurrencies by market capitalization.\nPowered by CoinGecko API</string>
+    <string name="rate_this_app_button_text">Rate This App&lt;</string>
 </resources>
