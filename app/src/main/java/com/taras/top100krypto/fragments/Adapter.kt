@@ -22,6 +22,10 @@ class Adapter(listener: OnClickListener) : RecyclerView.Adapter<Adapter.ViewHold
         fun onItemClick(model: Currency)
     }
 
+    fun add(currency: Currency) {
+        mList.add(currency)
+    }
+
     fun setList(list: List<Currency>) {
         mList.clear()
         mList.addAll(list)
@@ -30,6 +34,11 @@ class Adapter(listener: OnClickListener) : RecyclerView.Adapter<Adapter.ViewHold
 
     fun getItem(position: Int): Currency {
         return mList[position]
+    }
+
+    fun refresh() {
+        mList.clear()
+        notifyDataSetChanged()
     }
 
     override fun getItemCount(): Int {
